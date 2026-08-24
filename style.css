@@ -1,0 +1,23 @@
+
+
+
+
+ .logo {
+     max-width: 150px;
+ }
+
+
+  .container {
+    display: flex; /* ativa o Flexbox */
+    gap: 20px; /* espaço entre colunas */
+  }
+  .coluna {
+    flex: 1; /* largura igual para todas as colunas */
+    padding: 10px;
+   
+  }
+  .imgproduto{
+   
+    width: 200px;
+    height: 200px;
+  }
