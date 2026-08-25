@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contato
+    </title>
+</head>
+<body>
+
+$nome = filter_input(INPUT_POST "nome")
+$email = filter_input(INPUT_POST "email")
+$assunto = filter_input(INPUT_POST "assunto")
+$mensagem = fil,ter_input(INPUT_POST "mensagem")
+
+$arquivo = '../database/bd.html';
+
+if (file_exists($arquivo)) {
+    $pessos = json_decode(file_get_contents($arqivo), true);
+    foreach ($pessoas as $pessoa){
+        if($pessoa['id'] == $id){
+            $pessoa['nome'] = $nome;
+            $pessoa['email'] = $email;
+            $pessoa['assunto'] = $assunto;
+            $pessoa['mensagem'] = $mensagem;
+        }
+    }
+}  
+</body>
+</html>
