@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.menu a {
+    color: black;
+    padding: 10px 45px;
+    float: left;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Home {
+    margin-top: 60px;
+    font-family: Arial;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.Home:hover{
+    color: blue;
+    border-bottom-color: blue;
+    transform: translateZ(0) scale(1.1);
+}
+
+.Produtos {
+    margin-top: 60px;
+    font-family: Arial;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.Produtos:hover{
+    color: blue;
+    border-bottom-color: blue;
+    transform: translateZ(0) scale(1.1);
+}
+
+.Sobre {
+    margin-top: 60px;
+    font-family: Arial;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.Sobre:hover{
+    color: blue;
+    border-bottom-color: blue;
+    transform: translateZ(0) scale(1.1);
+}
+
+.Contato {
+    margin-top: 60px;
+    font-family: Arial;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.Contato:hover{
+    color: blue;
+    border-bottom-color: blue;
+    transform: translateZ(0) scale(1.1);
+}
+
+.Lupa {
+    margin-top: 60px;
+    font-family: Arial;
+    margin-left: 30px;
+}
+
+.Carrinho {
+    margin-top: 60px;
+    font-family: Arial;
+}
+
+
+/* ==============================
+   PRODUTO - DIVISÃO E IMAGENS
+============================== */
+
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    min-height: 650px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* ==============================
+   LADO DAS FOTOS
+============================== */
+
+.lado-fotos {
+    display: flex;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    border-right: 1px solid #ddd;
+}
+
+
+/* MINIATURAS */
+
+.miniaturas {
+    width: 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.miniaturas button {
+    width: 60px;
+    height: 60px;
+
+    padding: 4px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+.miniaturas img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==============================
+   FOTO PRINCIPAL
+============================== */
+
+.foto-grande {
+    position: relative;
+
+    flex: 1;
+
+    height: 550px;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foto-grande > img {
+    width: 380px;
+    height: 380px;
+
+    max-width: 90%;
+
+    object-fit: contain;
+}
+
+
+/* ==============================
+   SETAS
+============================== */
+
+.seta {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid #ddd;
+
+    background-color: white;
+
+    color: #3483fa;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+
+.seta.esquerda {
+    left: 0;
+}
+
+
+.seta.direita {
+    right: 0;
+}
+
+
+/* ==============================
+   LADO DAS INFORMAÇÕES
+============================== */
+
+.lado-informacoes {
+    width: 100%;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+}
