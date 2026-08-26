@@ -7,6 +7,7 @@
     <link rel="shorcut icon" type="image/x-icon" href="/imgDaPaginaInicial/TechStore.png">
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <nav class="menu">
         <a class="LinkDaLoja" href="/PaginaInicial.html"><img src="/imgDaPaginaInicial/LinkTechStore1.png" alt=""></a>
@@ -21,40 +22,55 @@
 
     <section class="produto">
 
-    <!-- LADO ESQUERDO -->
-    <div class="lado-fotos">
+        <!-- LADO ESQUERDO -->
+<div class="lado-fotos">
 
-        <div class="miniaturas">
+    <div class="miniaturas">
 
-            <button>
-                <img src="imgifoni/frenteifone15.jpg.webp">
-            </button>
+        <button type="button" onclick="mostrarImagem(0)">
+            <img src="imgifoni/frenteifone15.jpg.webp" alt="iPhone 15 Azul">
+        </button>
 
-            <button>
-                <img src="imgifoni/detalheifoni.jpg">
-            </button>
+        <button type="button" onclick="mostrarImagem(1)">
+            <img src="imgifoni/detalheifoni.jpg" alt="Detalhe iPhone 15">
+        </button>
 
-            <button>
-                <img src="imgifoni/trazifoni15.jpg.webp">
-            </button>
+        <button type="button" onclick="mostrarImagem(2)">
+            <img src="imgifoni/trazifoni15.jpg.webp" alt="Traseira iPhone 15">
+        </button>
 
-            <button>
-                <img src="imgifoni/cameraifoni.jpg">
-            </button>
-
-        </div>
-
-        <div class="foto-grande">
-
-            <button class="seta esquerda">‹</button>
-
-            <img src="imgifoni/ifoni15.jpg.webp">
-
-            <button class="seta direita">›</button>
-
-        </div>
+        <button type="button" onclick="mostrarImagem(3)">
+            <img src="imgifoni/cameraifoni.jpg" alt="Câmera iPhone 15">
+        </button>
 
     </div>
+
+
+    <div class="foto-grande">
+
+        <button
+            type="button"
+            class="seta esquerda"
+            onclick="imagemAnterior()">
+            ‹
+        </button>
+
+        <img
+            id="imagemPrincipal"
+            src="imgifoni/frenteifone15.jpg.webp"
+            alt="Apple iPhone 15 Azul"
+        >
+
+        <button
+            type="button"
+            class="seta direita"
+            onclick="proximaImagem()">
+            ›
+        </button>
+
+    </div>
+
+</div>
 
 
     <!-- LADO DIREITO -->
@@ -119,15 +135,32 @@
 
         </div>
 
+        
+        <div class="opcao">
+
+            <h3>
+                Cor: <strong>Preto</strong>
+            </h3>
+
+            <button class="cor">
+                Preto
+            </button>
+
+        </div>
+
         <div class="caracteristicas">
 
             <h3>Características</h3>
 
             <ul>
-                <li>Tela Super Retina XDR de 6,1"</li>
+                <li>Tamanho da tela: 6.1 "
+(14.76 cm x 7.16 cm x 7.8 mm)</li>
                 <li>Chip Apple A16 Bionic</li>
-                <li>128 GB de armazenamento</li>
-                <li>Câmera principal de 48 MP</li>
+                <li>Memória interna: 128 GB</li>
+                <li>Câmera frontal principal: 12 Mpx</li>
+                <li>Câmera traseira principal: 48 Mpx</li>
+                <li>Desbloqueio: Reconhecimento facial</li>
+                 <li>Com NFC: Sim</li>
                 <li>5G</li>
             </ul>
 
@@ -136,6 +169,55 @@
     </div>
 
 </section>
+
+<script>
+
+    const imagensAzul = [
+        "imgifoni/frenteifone15.jpg.webp",
+        "imgifoni/detalheifoni.jpg",
+        "imgifoni/trazifoni15.jpg.webp",
+        "imgifoni/cameraifoni.jpg"
+    ];
+
+    let imagemAtual = 0;
+
+
+    function mostrarImagem(numero) {
+
+        imagemAtual = numero;
+
+        document.getElementById("imagemPrincipal").src =
+            imagensAzul[imagemAtual];
+
+    }
+
+
+    function proximaImagem() {
+
+        imagemAtual++;
+
+        if (imagemAtual >= imagensAzul.length) {
+            imagemAtual = 0;
+        }
+
+        mostrarImagem(imagemAtual);
+
+    }
+
+
+    function imagemAnterior() {
+
+        imagemAtual--;
+
+        if (imagemAtual < 0) {
+            imagemAtual = imagensAzul.length - 1;
+        }
+
+        mostrarImagem(imagemAtual);
+
+    }
+
+</script>
 
 
     
