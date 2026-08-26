@@ -1,23 +1,34 @@
+.logo {
+  max-width: 150px;
+}
 
 
+.container {
+  display: flex;
+  gap: 20px;
+}
 
+.coluna {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius:10px;
+  margin: 20px;
+  
+}
+.colunaprincipal {
+   flex: 1;
+  padding: 10px;
+  margin: 20px;
+}
 
- .logo {
-     max-width: 150px;
- }
+.imgproduto {
 
-
-  .container {
-    display: flex; /* ativa o Flexbox */
-    gap: 20px; /* espaço entre colunas */
-  }
-  .coluna {
-    flex: 1; /* largura igual para todas as colunas */
-    padding: 10px;
-   
-  }
-  .imgproduto{
-   
-    width: 200px;
-    height: 200px;
-  }
+  width: 250px;
+  height: 220px;
+}
+.botaoproduto {
+   border: 1px solid #000;
+  border-radius:5px;
+  margin: 20px;
+}
