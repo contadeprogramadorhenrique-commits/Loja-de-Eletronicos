@@ -14,12 +14,14 @@
   border: 1px solid #000;
   border-radius:10px;
   margin: 20px;
-  
+  text-align: center;
 }
 .colunaprincipal {
-   flex: 1;
+  flex: 1;
   padding: 10px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imgproduto {
@@ -28,7 +30,18 @@
   height: 220px;
 }
 .botaoproduto {
-   border: 1px solid #000;
+   border: 1px solid #2326b8;
   border-radius:5px;
   margin: 20px;
+  padding: 10px;
+  color: blue;
+  
+}
+.preco{
+  color: blue;
+}
+.botaocategoria{
+  color: black;
+  padding: 5px 0;
+  font-size: 20px;
 }
