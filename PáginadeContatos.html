@@ -5,26 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de contato
     </title>
+    <link rel="stylesheet" href="Contatos.css">
 </head>
 <body>
-
-$nome = filter_input(INPUT_POST "nome")
-$email = filter_input(INPUT_POST "email")
-$assunto = filter_input(INPUT_POST "assunto")
-$mensagem = fil,ter_input(INPUT_POST "mensagem")
-
-$arquivo = '../database/bd.html';
-
-if (file_exists($arquivo)) {
-    $pessos = json_decode(file_get_contents($arqivo), true);
-    foreach ($pessoas as $pessoa){
-        if($pessoa['id'] == $id){
-            $pessoa['nome'] = $nome;
-            $pessoa['email'] = $email;
-            $pessoa['assunto'] = $assunto;
-            $pessoa['mensagem'] = $mensagem;
-        }
-    }
-}  
+<nav class="menu">
+        <a class="LinkDaLoja" href="/PaginaInicial.html"><img src="/imgDaPaginaInicial/LinkTechStore1.png" alt=""></a>
+        <a class="Home" href="/PaginaInicial.html">Home</a>
+        <a class="Produtos" href="/Produtos.html" target="_blank">Produtos</a>
+        <a class="Sobre" href="" target="_blank">Sobre</a>
+        <a class="Contato" href="" target="_blank">Contato</a>
+        <a class="Lupa" href="/Produtos.html" target="_blank"><img src="/imgDaPaginaInicial/lupa.png" alt=""></a>
+        <a class="Carrinho" href="/Produtos.html" target="_blank"><img src="/imgDaPaginaInicial/CarrinhodeCompras.png" alt=""></a>
+    </nav> 
+    <h1>
+         <p>Seu nome</p>
+         <p>E-Mail</p>
+         <p>Assunto</p>
+         <p>Mensagem</p>
+    </h1> 
 </body>
 </html>
