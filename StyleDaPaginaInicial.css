@@ -31,7 +31,7 @@
     transition: all 0.3s ease;
 }
 
-.Home:hover{
+.Home:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -47,7 +47,7 @@
     transition: all 0.3s ease;
 }
 
-.Produtos:hover{
+.Produtos:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -63,7 +63,7 @@
     transition: all 0.3s ease;
 }
 
-.Sobre:hover{
+.Sobre:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -79,7 +79,7 @@
     transition: all 0.3s ease;
 }
 
-.Contato:hover{
+.Contato:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -97,32 +97,32 @@
 }
 
 .topo {
-  background-color: grey;
-  padding: 50px;
-  text-align: justify;
-  background-image: url(/imgDaPaginaInicial/Cabeçalhodapáginainicial1.png);
-  background-image: center;
-  justify-content: center;
-  align-items: center;
-  height: 320px;
-  background-position: center;
+    background-color: grey;
+    padding: 50px;
+    text-align: justify;
+    background-image: url(/imgDaPaginaInicial/Cabeçalhodapáginainicial1.png);
+    background-image: center;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    background-position: center;
 
 }
 
 .paragrafodocabeçalho {
-  color: white;
-  font-size: 25px;
-  font-family: Arial;
-  margin: 5px;
+    color: white;
+    font-size: 25px;
+    font-family: Arial;
+    margin: 5px;
 }
 
 .top {
-  color: aliceblue;
-  font-size: 50px;
-  font-family: Arial;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Arial;
 }
 
-.botao{
+.botao {
     display: inline-block;
     background-color: #007BFF;
     color: #FFFFFF;
@@ -138,7 +138,39 @@
     background-color: #0056b3;
 }
 
-.titulocategorias{
+.titulocategorias {
     font-family: Arial;
     padding: 30px 0px 0px 100px;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.estrutura {
+    flex: 1;
+    max-width: 250px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.imgproduto {
+    width: 170px;
+}
+
+.imgproduto2 {
+    width: 220px;
+}
+
+.imgproduto3 {
+    width: 180px;
+}
+
+.imgproduto4 {
+    width: 220px;
 }
