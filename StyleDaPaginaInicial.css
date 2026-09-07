@@ -204,3 +204,44 @@
 .imgprodutop004 {
     width: 230px;
 }
+
+footer {
+    background-color: rgb(24, 0, 173);
+    color: white;
+    padding: 50px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+footer .grupo-contatos,
+footer .grupo-redes {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .texto-sobreposicao {
+    margin: 0;
+}
+
+footer a {
+    margin: 5px 0;
+    color: #ffffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
