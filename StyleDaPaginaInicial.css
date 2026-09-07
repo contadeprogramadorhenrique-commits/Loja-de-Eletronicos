@@ -140,7 +140,7 @@
 
 .titulocategorias {
     font-family: Arial;
-    padding: 30px 0px 0px 100px;
+    padding: 30px 0px 0px 50px;
 }
 
 .container-produtos {
@@ -173,4 +173,34 @@
 
 .imgproduto4 {
     width: 220px;
+}
+
+.tituloprodutosemdestaque {
+    font-family: Arial;
+    padding: 20px 0px 0px 50px;
+}
+
+.Valor {
+    color: blue;
+}
+
+.imgprodutop2 {
+    width: 230px;
+}
+
+.imgprodutop3 {
+    width: 230px;
+    height: 200;
+}
+
+.imgprodutop4 {
+    width: 230px;
+}
+
+.imgprodutop003 {
+    width: 230px;
+}
+
+.imgprodutop004 {
+    width: 230px;
 }
