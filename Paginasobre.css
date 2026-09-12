@@ -143,3 +143,60 @@
     font-size: 20px;
     margin: 20px;
 }
+
+.Escolhadaloja {
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    margin: 30px;
+    color: rgb(9, 9, 189);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.estrutura {
+    flex: 1;
+    max-width: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.imgcaixa {
+    width: 230px;
+}
+
+.entregarapida {
+    font-family: Arial;
+    font-size: 40px;
+    margin: 30px;
+    color: rgb(9, 9, 189);
+}
+
+.selo-de-qualidade {
+    font-size: 150px;
+    text-align: center;
+}
+
+.titulo-qualidade {
+    font-family: Arial;
+    font-size: 40px;
+    margin: 30px;
+    color: rgb(9, 9, 189);
+}
+
+.selo-de-seguranca {
+    font-size: 150px;
+    text-align: center;
+}
+
+.titulo-compra-segura {
+    font-family: Arial;
+    font-size: 40px;
+    margin: 30px;
+    color: rgb(9, 9, 189);
+}
