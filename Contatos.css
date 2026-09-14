@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial;
+}
+
 .menu {
     background-color: white;
     padding: 5px;
@@ -31,7 +35,7 @@
     transition: all 0.3s ease;
 }
 
-.Home:hover{
+.Home:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -47,7 +51,7 @@
     transition: all 0.3s ease;
 }
 
-.Produtos:hover{
+.Produtos:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -63,7 +67,7 @@
     transition: all 0.3s ease;
 }
 
-.Sobre:hover{
+.Sobre:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -79,7 +83,7 @@
     transition: all 0.3s ease;
 }
 
-.Contato:hover{
+.Contato:hover {
     color: blue;
     border-bottom-color: blue;
     transform: translateZ(0) scale(1.1);
@@ -96,16 +100,35 @@
     font-family: Arial;
 }
 
-.coluna1{
+.coluna1 {
     float: left;
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 90px;
 }
 
-.coluna1 input{
-    width: 50%;
+.coluna2{
+    float: left;
+    margin: 30px;
+}
+
+.i1 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.i2 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.i3 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .botao {
@@ -124,4 +147,13 @@
 
 .botao:hover {
     background-color: #0056b3;
+}
+
+.t1 {
+    margin: 10px;
+}
+
+.ms {
+    width: 80%;
+    padding: 60px;
 }

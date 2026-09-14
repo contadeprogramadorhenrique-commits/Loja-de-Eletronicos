@@ -26,8 +26,8 @@
 
 .imgproduto {
 
-  width: 250px;
-  height: 220px;
+  width: 200px;
+  height: 170px;
 }
 .botaoproduto {
    border: 1px solid #2326b8;
@@ -35,13 +35,13 @@
   margin: 20px;
   padding: 10px;
   color: blue;
-  
+
 }
 .preco{
   color: blue;
 }
 .botaocategoria{
   color: black;
-  padding: 5px 0;
+  padding: 4px 0;
   font-size: 20px;
 }
