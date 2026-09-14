@@ -200,3 +200,83 @@
     margin: 30px;
     color: rgb(9, 9, 189);
 }
+
+.NossaHistoria {
+    color: black;
+    background-color: rgb(176, 214, 231);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-family: Arial;
+    align-content: flex-start;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.TituloNossaHistoria {
+    font-family: Arial;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    color: rgb(9, 9, 189);
+}
+
+.p3 {
+    font-size: 30px;
+    font-family: Arial;
+    margin: 20px;
+}
+
+.p4 {
+    font-size: 30px;
+    font-family: Arial;
+    margin: 20px;
+}
+
+.p5 {
+    font-size: 30px;
+    font-family: Arial;
+    margin: 20px;
+}
+
+footer {
+    background-color: rgb(24, 0, 173);
+    color: white;
+    padding: 50px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+footer .grupo-contatos,
+footer .grupo-redes {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .texto-sobreposicao {
+    margin: 0;
+}
+
+footer a {
+    margin: 5px 0;
+    color: #ffffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
