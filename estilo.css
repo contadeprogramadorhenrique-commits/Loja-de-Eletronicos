@@ -148,14 +148,12 @@ body {
 
 .lado-fotos {
     display: flex;
-
     min-width: 0;
-
+    height: 650px;
     padding: 40px;
-
     background-color: white;
-
     border-right: 1px solid #eeeeee;
+    align-self: start;
 }
 
 
@@ -223,18 +221,13 @@ body {
 
 .foto-grande {
     position: relative;
-
     flex: 1;
-
     min-width: 0;
-    min-height: 560px;
-
+    height: 570px;
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    padding: 30px;
+    padding: 10px;
 }
 
 
@@ -244,14 +237,11 @@ body {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
-
-    transform: translate(-35px, -40px);
-
-   
+    display: block;
 }
 
 .foto-grande > img:hover {
-    transform: translate(-35px, -40px) scale(1.03);
+    transform: scale(1.03);
 }
 
 
